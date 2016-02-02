@@ -1,0 +1,32 @@
+.texter-wrap{
+    .convert-texter{ padding: 20px 0;
+        .text-block{ padding-left: 20px; border-left: 3px solid #ff0000;
+            p{font-size: 20px; font-weight: 500; font-family: "Geometria"; line-height: 28px; }
+        }
+    }
+}
+
+.title{width: 100%; border-bottom: 3px solid black; padding-bottom: 10px;
+    h2{font-size: 36px; font-weight: 700; font-family: "Geometria"; color: #e61313; line-height: 36px;}
+}
+
+#procedure{background-image: url(../images/bg-srt.jpg); background-attachment: fixed; }
+.procedure-wrap{ padding-top: 40px; padding-bottom: 40px;
+    .block-inline{ width: 100%; padding-top: 20px; padding-bottom: 20px;
+        .item{width: 25%; float: left; text-align: center;
+            .slot-1-img{background-image: url(../images/item1.png);background-position: center;}
+            .slot-2-img{background-image: url(../images/item2.png);background-position: center;}
+            .slot-3-img{background-image: url(../images/item3.png);background-position: center;}
+            .slot-4-img{background-image: url(../images/item4.png);background-position: center;}
+            .image-in-circle{width: 160px; height: 160px; font-size: 72px; font-weight: 300; font-family: "Geometria"; line-height: 144px; color: #ffffff; display: inline-block; vertical-align: center; border-radius: 50%; background-repeat: no-repeat;background-size: 100%; transition: all 0.5s; cursor: pointer; position: relative; z-index: 1;
+
+                .numberting{ position: relative; z-index: 10;}
+                &:after{content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.4); border-radius: 50%;transition: all 0.5s;z-index: 5;   }
+                &:hover{background-size: 120%;
+                    &:after{ background-color: rgba(0,0,0,0);}
+                }
+            }
+            .undertext{font-size: 16px; font-weight: 500; font-family: "Geometria"; line-height: 20px; color: #000000;}
+        }
+    }
+}
