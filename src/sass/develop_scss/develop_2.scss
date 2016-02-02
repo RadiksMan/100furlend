@@ -1,19 +1,19 @@
 .texter-wrap{
-    .convert-texter{ padding: 20px 0;
-        .text-block{ padding-left: 20px; border-left: 3px solid #ff0000;
+    .convert-texter{ padding: 92px 0 144px;
+        .text-block{ padding-left: 38px; border-left: 3px solid #ff0000;
             p{font-size: 20px; font-weight: 500; font-family: "Geometria"; line-height: 28px; }
         }
     }
 }
 
-.title{width: 100%; border-bottom: 3px solid black; padding-bottom: 10px;
-    h2{font-size: 36px; font-weight: 700; font-family: "Geometria"; color: #e61313; line-height: 36px;}
+.title{width: 100%; border-bottom: 3px solid black; padding-bottom: 13px;
+    h2{font-size: 36px; font-weight: 700; font-family: "Geometria"; color: #e61313; line-height: 36px; text-transform: uppercase; letter-spacing: 1px;}
 }
 
 #procedure{background-image: url(../images/bg-srt.jpg); background-attachment: fixed; }
-.procedure-wrap{ padding-top: 40px; padding-bottom: 40px;
+.procedure-wrap{ padding-top: 98px; padding-bottom: 54px; background-color: rgba(255,255,255,0.2);
     .block-inline{ width: 100%; padding-top: 20px; padding-bottom: 20px;
-        .item{width: 25%; float: left; text-align: center;
+        .item{width: 25%; float: left; text-align: center; padding-top: 50px;
             .slot-1-img{background-image: url(../images/item1.png);background-position: center;}
             .slot-2-img{background-image: url(../images/item2.png);background-position: center;}
             .slot-3-img{background-image: url(../images/item3.png);background-position: center;}
@@ -26,7 +26,7 @@
                     &:after{ background-color: rgba(0,0,0,0);}
                 }
             }
-            .undertext{font-size: 16px; font-weight: 500; font-family: "Geometria"; line-height: 20px; color: #000000;}
+            .undertext{font-size: 16px; font-weight: 500; font-family: "Geometria"; line-height: 20px; color: #000000;padding-top: 25px;}
         }
     }
 }
