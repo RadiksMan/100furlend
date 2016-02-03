@@ -35,9 +35,9 @@ a[href^="http"]:empty::before {
 .footer_placeholder{height: 200px;}
 .footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}
 
-::-webkit-input-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;}
-:-moz-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;}
-::-moz-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;}
-:-ms-input-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;}
+::-webkit-input-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+:-moz-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+::-moz-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+:-ms-input-placeholder {color:#ffffff;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
 
 /*End Layout*/
