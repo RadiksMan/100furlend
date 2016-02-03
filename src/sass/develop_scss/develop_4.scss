@@ -15,16 +15,22 @@
 
 /*header*/
 header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.349);z-index: 5;
+    a,span{text-decoration: none;color: white;font-size: 12px;
+        &:hover{}
+    }
     .header_wrap{display: table;width: 100%;}
     .header_item{display: table-cell;vertical-align: middle;
         &.item_1{width: 29%;}
         &.item_2{width: 40%;
+            .sub_item_wrap .item_1{
+                a{text-decoration: none;}
+            }
             .sub_item_wrap .item_2{height: 70px;}
         }
         &.item_3{width: 32%;
             .item_1{width: 43%;}
             .item_2{width: 57%;}
-            .sub_item_wrap .item_1 a{color: #fff;font-size: 14px;width: 100%;display: inline-block;text-decoration: none;
+            .sub_item_wrap .item_1 a{color: #fff;font-size: 14px;width: 100%;display: inline-block;text-decoration: none;line-height: 16px;
                 &:hover{text-decoration: underline;}
             }
         }
@@ -35,5 +41,6 @@ header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0
         &.item_2{height: 100%;}
     }
 
+    .sub_menu{min-height: 127px;width: 100%;position: absolute;top: 100%;background-color: rgba(0, 0, 0, 0.65);left: 0;}
 }
 /*/header*/
