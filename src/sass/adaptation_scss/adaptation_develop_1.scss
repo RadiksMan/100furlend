@@ -21,9 +21,6 @@
 			.mbox{
 				&:before{content: '';position: absolute;right:0;top:0;display: block;width: 15px;height: 100%;z-index: 1;}
 			}
-			.map-wrap{
-				#map_id{height: 1000px;}
-			}
 			.footer-form{width: 100%;padding-top: 110px;
 				&:after{left: -15px;}
 			}
