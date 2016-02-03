@@ -11,7 +11,20 @@
 
 }
 @media screen and (max-width: 1024px){
+    /*tradein */
+    .tradein{background-size: cover;}
+    .tradein .tradein-title{font-size: 62px;}
 
+    /*header*/
+    header{
+        .header_item{
+            &.item_1{width: 22%;}
+            &.item_2{width: 36%;}
+            &.item_3{width: 44%;}
+        }
+        .sub_menu_wrap a{margin-right: 7%;font-size: 10px;}
+        .sub_menu_wrap .sub_menu_item{margin: 0 -1px;}
+    }
 }
 @media screen and (max-width: 992px){
 
