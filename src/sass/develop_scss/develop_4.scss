@@ -5,8 +5,35 @@
 }
 /*/tradein top section*/
 
+/*button*/
+.button{background-color: $red;color: white;width: 100%;max-width: 195px;line-height: 31px;padding: 10px 0px;text-align: center;text-decoration: none;display: inline-block;max-height: 50px;font-weight: 300;font-size: 16px;transition:all ease-out .2s;border:none;vertical-align: middle;overflow: hidden;
+    &:hover{background-color: #E41B1B;}
+    &:active{background-color: #921717;}
+
+    span{vertical-align: top;line-height: 26px;display: inline-block;}
+}
+
 /*header*/
 header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.349);z-index: 5;
+    .header_wrap{display: table;width: 100%;}
+    .header_item{display: table-cell;vertical-align: middle;
+        &.item_1{width: 29%;}
+        &.item_2{width: 40%;
+            .sub_item_wrap .item_2{height: 70px;}
+        }
+        &.item_3{width: 32%;
+            .item_1{width: 43%;}
+            .item_2{width: 57%;}
+            .sub_item_wrap .item_1 a{color: #fff;font-size: 14px;width: 100%;display: inline-block;text-decoration: none;
+                &:hover{text-decoration: underline;}
+            }
+        }
+    }
+    .sub_item_wrap{width: 100%;display: table;}
+    .sub_item{display: table-cell;width: 50%;vertical-align: middle;
+        &.item_1{}
+        &.item_2{height: 100%;}
+    }
 
 }
 /*/header*/
