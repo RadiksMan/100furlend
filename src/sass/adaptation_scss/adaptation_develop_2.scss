@@ -18,11 +18,23 @@
 }
 @media screen and (max-width: 767px){
     .procedure-wrap .block-inline .item { width: 300px; float: none; margin: 0 auto;}
+    .ourplus-wrap .convert{
+        .iplus {margin-left: calc(50% - 300px/2);}
+        .flot-punch {float: none;width: 100%; display: block;}
+        .flot-punch:nth-child(3), .flot-punch:nth-child(2) {
+            float: none;
+            .iplus {margin-left: calc(50% - 300px/2);}
+        }
+    }
 }
 @media screen and (max-width: 666px){
 
 }
 @media screen and (max-width: 479px){
+    .title h2 { font-size: 28px;}
+    .ourplus-wrap {padding-top: 50px;}
+    .ourplus-wrap .convert .flot-punch { padding-top: 20px;  padding-bottom: 20px;}
+    .procedure-wrap { padding-top: 30px;}
 
 }
 @media screen and (max-width: 320px){
