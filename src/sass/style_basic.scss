@@ -30,10 +30,7 @@ a[href^="http"]:empty::before {
   content: attr(href);
 }
 
-a[href]:not([class]) {
-  text-decoration: underline;
-  &:hover,&:active{text-decoration: none;}
-}
+
 
 .footer_placeholder{height: 200px;}
 .footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}

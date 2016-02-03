@@ -42,5 +42,10 @@ header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0
     }
 
     .sub_menu{min-height: 127px;width: 100%;position: absolute;top: 100%;background-color: rgba(0, 0, 0, 0.65);left: 0;}
+    .sub_menu_wrap{text-align: center;padding: 13px 100px 0px;
+        a{font-size: 12px;line-height: 14px;text-transform: uppercase;color: #fff;text-decoration: none;text-decoration: none;}
+        li{display: inline-block;vertical-align: top;width: 24.3%;text-align: left;margin-bottom: 13px;padding-bottom: 10px;padding-right: 10px;}
+        .sub_menu_item{display: inline-block;width: 49%;}
+    }
 }
 /*/header*/
