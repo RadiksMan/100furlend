@@ -101,7 +101,7 @@ function validationCall(form){
   var formSur = thisForm.serialize();
 
     $.ajax({
-        url : thisForm.attr('action'),
+        url : ajaxUrl,
         data: formSur,
         method:'POST',
         success : function(data){
@@ -119,9 +119,10 @@ function validationCall(form){
     function popNext(){
         $.fancybox.open("#call_success",{
             padding:0,
-            fitToView:false,
+            fitToView:true,
             wrapCSS:"call-popup",
             autoSize:true,
+            closeBtn:false,
             afterClose: function(){
                 $('form').trigger("reset");
                 clearTimeout(timer);

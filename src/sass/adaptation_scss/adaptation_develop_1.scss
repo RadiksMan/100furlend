@@ -85,6 +85,16 @@
 
 	/* /formmap */
 
+	/* call-popup */
+
+		.call-popup{
+			.call-success{font-size: 24px;padding: 15px 10px;
+				.call-title{font-size: 30px;}
+			}
+		}
+
+	/* /call-popup */
+
 }
 @media screen and (max-width: 320px){
 
