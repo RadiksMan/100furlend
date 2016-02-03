@@ -8,7 +8,7 @@
 /*button*/
 .button{background-color: $red;color: white;width: 100%;max-width: 195px;line-height: 31px;padding: 10px 0px;text-align: center;text-decoration: none;display: inline-block;max-height: 50px;font-weight: 300;font-size: 16px;transition:all ease-out .2s;border:none;vertical-align: middle;overflow: hidden;
     &:hover{background-color: #E41B1B;}
-    &:active{background-color: #921717;}
+    &:active{background-color: #921717;position: relative;top: 2px;}
 
     span{vertical-align: top;line-height: 26px;display: inline-block;}
 }
