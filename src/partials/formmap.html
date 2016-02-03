@@ -1,54 +1,65 @@
-<div class="mbox">
+<section class="formmap">
+	<div class="mbox">
 
-	<div class="map-wrap">
-		<div id="map_id"></div>
-	</div>
-	<!-- title -->
-
-	<div class="footer-form">
-
-		<div class="footer-form-text">
-			<div class="footer-form-text-col">
-				<div class="footer-form-text-col-img">
-					А
-				</div>
-				<div class="footer-form-text-main">
-					г. Москва, Щелковское шоссе, 100, Бизнес-центр East Gate корпус 20, офис 304
-				</div>
-			</div>
-			<div class="footer-form-text-col">
-				<div class="footer-form-text-col-img">
-					Т
-				</div>
-				<div class="footer-form-text-main">
-					<p>8 (800) 700-63-36</p>
-					<p>7 (495) 544-63-66</p>
-				</div>
-			</div>
+		<div class="map-wrap">
+			<div id="map_id"></div>
 		</div>
 
-		<div class="footer-form-wrap">
-			<form class="footer-form-main">
-				<div class="footer-form-title">Остались вопросы? Задайте их нам!</div>
-				<div class="footer-form-main-wrap">
-					<div class="form_row">
-						<div class="form_input">
-							<input type="text" name="contact_name" required="required" />
-						</div>
-						<div class="form_input">
-							<input type="text" name="contact_email" required="required" />
-						</div>
+		<div class="title">
+	        <h2>Контакты</h2>
+	    </div>
+
+		<div class="footer-form">
+
+			<div class="footer-form-text">
+				<div class="footer-form-text-col">
+					<div class="footer-form-text-col-img">
+						А
 					</div>
-					<div class="form_row">
-						<textarea name="contact_message" cols="30" rows="10"></textarea>
-					</div>
-					<div class="form_row">
-						<button type="submit">Задать вопрос</button>
+					<div class="footer-form-text-main">
+						г. Москва, Щелковское шоссе, <span>100</span>, Бизнес-центр East Gate корпус <span>20</span>, офис <span>304</span>
 					</div>
 				</div>
-			</form>
+				<div class="footer-form-text-col">
+					<div class="footer-form-text-col-img">
+						Т
+					</div>
+					<div class="footer-form-text-main">
+						<p>
+							<span>8 (800) 700-63-36</span>
+						</p>
+						<p>
+							<span>7 (495) 544-63-66</span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-form-wrap">
+				<form class="footer-form-main">
+					<div class="footer-form-title">Остались вопросы? Задайте их нам!</div>
+					<div class="footer-form-main-wrap">
+						<div class="form_row">
+							<div class="form_input col_2">
+								<input type="text" name="contact_name" required="required" placeholder="Ваше имя" />
+							</div>
+							<div class="form_input col_2">
+								<input type="text" name="contact_email" required="required" placeholder="ваш e-mail" />
+							</div>
+						</div>
+						<div class="form_row">
+							<div class="form_input">
+								<textarea name="contact_message" cols="30" rows="10" placeholder="ваш вопрос"></textarea>
+							</div>
+						</div>
+						<div class="form_row submit_row">
+							<button type="submit" class="button">Задать вопрос</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
 		</div>
 
 	</div>
-
-</div>
+</section>
