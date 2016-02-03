@@ -55,27 +55,27 @@ function validate(form, options){
         $('[required]',$form).each(function(){
             $(this).rules( "add", {
                 required: true,
-                messages: {
-                    required: "Вы пропустили"
-                }
+                // messages: {
+                //     required: "Вы пропустили"
+                // }
             });
         });
 
         if($('[type="email"]',$form).length) {
             $('[type="email"]',$form).rules( "add",
             {
-                messages: {
-                    email: "Невалидный email"
-                 }
+                // messages: {
+                //     email: "Невалидный email"
+                //  }
             });
         }
 
         if($('.tel-mask[required]',$form).length){
             $('.tel-mask[required]',$form).rules("add",
             {
-                messages:{
-                    required:"Введите номер мобильного телефона."
-                }
+                // messages:{
+                //     required:"Введите номер мобильного телефона."
+                // }
             });
         }
 
@@ -130,10 +130,10 @@ function validationCall(form){
         });
         var timer = null;
 
-        timer = setTimeout(function(){
-            $('form').trigger("reset");
-            $.fancybox.close("#call_success");
-        },2000);
+        // timer = setTimeout(function(){
+        //     $('form').trigger("reset");
+        //     $.fancybox.close("#call_success");
+        // },2000);
 
 
     }
