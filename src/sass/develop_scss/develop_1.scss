@@ -79,3 +79,15 @@
 	}
 
 /* /call-success */
+
+/* tradein-safe */
+
+	.tradein{
+		&.tradein-safe{text-align: center;background-image:url(../images/tradein-safe-bg.png);
+			.tradein-title{width: 100%;
+				.tradein-title-small{font-size: 36px;}
+			}
+		}
+	}
+
+/* /tradein-safe */
