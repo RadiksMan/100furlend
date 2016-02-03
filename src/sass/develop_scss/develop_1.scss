@@ -31,10 +31,30 @@
 					input{line-height: 45px;height: 45px;font-size: 12px;padding: 0 15px;}
 					textarea{padding: 15px;height: 125px;resize:none;}
 				}
-				&.submit_row{text-align: right;}
+				&.submit_row{text-align: right;
+					.button{font-size: 12px;font-weight: 400;text-transform: uppercase;max-width: 340px;letter-spacing: 1px;}
+				}
 			}
 		}
 
 	}
 
 /* /formmap */
+
+
+/* footer */
+
+	.footer{padding: 8px 0 14px 0;
+		.footer-rights{float: left;font-size: 10px;font-weight: 300;color:#000;text-transform: uppercase;padding-top: 19px;}
+		.footer-socials{float: right;
+			.footer-social-item{display: inline-block;margin-right: 28px;text-decoration: none;position: relative;
+				&:last-child{margin-right: 0;}
+				&:hover{
+					.soc-hover{opacity: 1;}
+				}
+				.soc-hover{position: absolute;opacity: 0;transition:opacity 300ms ease;top:0;left:0;}
+			}
+		}
+	}
+
+/* /footer */
