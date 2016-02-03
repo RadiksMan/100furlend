@@ -159,6 +159,7 @@ function fancyboxForm(){
 
 $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('.footer-form-main',{submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
 });
