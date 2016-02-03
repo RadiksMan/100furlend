@@ -99,7 +99,7 @@ function validationCall(form){
 
   var thisForm = $(form);
   var formSur = thisForm.serialize();
-
+  console.log(formSur);
     $.ajax({
         url : thisForm.attr('action'),
         data: formSur,
