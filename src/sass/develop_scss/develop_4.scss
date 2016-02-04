@@ -119,3 +119,17 @@ header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0
 }
 
 /*/call-popup*/
+
+/* tradein-safe-2 */
+
+.tradein{
+    &.tradein-safe-2{text-align: center;background-image:url(../images/tradein-safe-bg-2.jpg);background-position: center 85%;
+    }
+}
+/* /tradein-safe-2 */
+
+/*texter-safe-2*/
+.texter-safe-2{
+    .text-block p:first-child{margin-bottom: 15px;}
+}
+/*/texter-safe-2*/
