@@ -9,10 +9,11 @@
                         &:last-child{background-color: #acacac;}
                     }
                     td{font: 500 16px/16px "Geometria"; color: #020202; width: 50%; height: 60px;  text-align: center;  border:1px solid #020202;   vertical-align: middle;}
+                    &:hover{background-color: rgba(0,0,0,0.3);}
                 }
             }
-            .buttom-wrap{ width:100%; text-align: right;
-                .button{ display: inline-block; max-width: 337px;  margin-right: 70px; max-height: 61px; padding: 15px 0px;
+            .buttom-wrap{ max-width: 1000px; width:100%; margin: 0 auto; text-align: right;
+                .button{ display: inline-block; max-width: 337px;   max-height: 61px; padding: 15px 0px;
                     a{color: #fff; text-transform: uppercase; font: 700 12px/12px "Geometria"; text-decoration: none; text-align: center; display: inline-block;}
                 }
             }
@@ -20,14 +21,19 @@
     }
 /*END price-safe*/
 /*gallery-safe*/
-    .gallery-wrap{
-            .gallery-content{
-                .item{width: 100%; max-width: 370px; height: 369px; display: inline-block; position: relative;
-                    .item-bg{
-                        img{}
+    .gallery-wrap{padding-top: 141px;
+            .gallery-content{ display: flex; justify-content: space-around; flex-wrap: wrap;     padding: 61px 0 170px;
+                .item{width: 100%; max-width: 370px; height: 369px; display: inline-block; position: relative; vertical-align: top; margin-bottom: 30px;
+                    .item-bg{ position: relative;  width: 100%; max-width: 370px; height: 369px; overflow: hidden; display: block;
+                        img{transform: scale(1) rotate(0); transition: transform 300ms; position: absolute;}
                     }
-                    .item-title{height: 60px; width:100%; position: relative; background-color: rgba(0,0,0,0.5); text-align: center;
+                    .item-title{height: 60px; width:100%; position: relative; background-color: rgba(0,0,0,0.5); text-align: center; position: absolute; top:0;
                         span{ font: 700 18px/18px "Geometria"; color: #fff;}
+                    }
+                    &:hover{
+                        .item-bg{
+                            img{transform: scale(1.25) rotate(7deg);}
+                        }
                     }
                 }
             }
