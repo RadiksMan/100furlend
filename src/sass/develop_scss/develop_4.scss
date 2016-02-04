@@ -1,6 +1,6 @@
 /*tradein top section*/
-.tradein{min-height: 660px;background-image: url(../images/tradein-bg.jpg);background-repeat: no-repeat;background-position: center 80%;background-attachment: fixed;position: relative;z-index: 2;overflow: hidden;
-    &:after{position: absolute;z-index: 2;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.651);content: '';}
+.tradein{min-height: 660px;background-image: url(../images/tradein-bg.jpg);background-repeat: no-repeat;background-position: center 123%;background-attachment: fixed;position: relative;z-index: 2;overflow: hidden;
+    &:after{position: absolute;z-index: 2;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.32);content: '';}
     .tradein-title{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: 3;color: $red;font-weight: bold;font-size: 72px;text-transform: uppercase;}
 }
 /*/tradein top section*/
@@ -68,9 +68,54 @@ header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0
     }
     .icon_head{display: inline-block;width: 8px;height: 8px;border-right: 2px solid white;border-bottom: 2px solid white;margin-left: 10px;transform: rotate(-45deg) translate(0px, -1px);transform-origin:50% 50%;transition:all ease-out .2s;}
     .mobile_menu{display: none;height: 30px;width: 40px;position: relative;
-        &:after,&:before{content: '';position: absolute;background-color: #fff;width: 100%;height: 5px;top: 0;left: 0;}
+        &:after,&:before{content: '';position: absolute;background-color: #fff;width: 100%;height: 5px;top: 0;left: 0;transform:translate(0,0) rotate(0deg);transition:all ease .2s;}
         &:before{top: auto;bottom: 0;}
-        span{position: absolute;background-color: #fff;width: 100%;height: 5px;top: 12px;left: 0;}
+        span{position: absolute;background-color: #fff;width: 100%;height: 5px;top: 12px;left: 0;transform:translate(0,0) rotate(0deg);transition:opacity ease .2s;}
+    }
+    .header_item.item_2{
+        &.active{
+            .mobile_menu{
+                &:after{transform: translate(0,236%) rotate(45deg)}
+                &:before{transform: translate(0,-236%) rotate(-45deg)}
+                span{opacity: 0;}
+            }
+        }
     }
 }
 /*/header*/
+
+/*call-popup*/
+.fancybox-form{
+    .fancybox-skin{background-color: #fff;border-radius: 0px;}
+    .fancybox-close{top: 0;right: 0;background:none;
+        &:after,&:before{content: '';position: absolute;width: 80%;height: 4px;top: 74%;left: 37%;transform: rotate(45deg) translate(-50%,-50%);background-color: $red;}
+        &:before{transform: rotate(-45deg) translate(-50%,-50%);top: 20%;left: 44%;}
+    }
+}
+#call-popup{width: 430px;padding: 0px 15px;font-weight: 500;font-size: 18px;color: #000000;text-align: center;
+    .contact-form-title{padding-top: 45px;padding-bottom: 40px;}
+    .contact-form-item{margin-bottom: 20px;
+    }
+    .form_row{
+        &.error{
+            input{background-image: url(../images/validation_yes.png);background-position: 95% center;background-repeat: no-repeat;}
+        }
+        &.valid{
+            input{background-image: url(../images/validation_ok.png);background-position: 95% center;background-repeat: no-repeat;}
+        }
+    }
+    .form_input{
+        input{width: 100%;max-width: 255px;height: 50px;line-height: 50px;font-size: 12px;color: #010101;padding: 0px 12px;border:1px solid #000000;
+            &::-webkit-input-placeholder {color:#000;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+            &:-moz-placeholder {color:#000;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+            &::-moz-placeholder {color:#000;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+            &:-ms-input-placeholder {color:#000;text-transform: uppercase;font-size:12px;transition:color 300ms ease;}
+        }
+        .errorText{display: none !important;}
+    }
+    .contact-submit{max-width: 255px;margin-top: 15px;margin-bottom: 20px;height: 60px;line-height: 60px;padding: 15px 0px;max-height: 60px;line-height: 60px;
+         @extend .button;
+    }
+}
+
+/*/call-popup*/

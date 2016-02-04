@@ -37,7 +37,22 @@
 	/* /formmap */
 
 }
+@media screen and (max-width: 768px){
+
+	/* tradein-safe */
+
+		.tradein{
+			&.tradein-safe{
+				.tradein-title{white-space: normal;font-size: 42px;}
+			}
+		}
+
+	/* /tradein-safe */
+
+}
 @media screen and (max-width: 767px){
+
+
 
 }
 @media screen and (max-width: 666px){
@@ -94,6 +109,18 @@
 		}
 
 	/* /call-popup */
+
+	/* tradein-safe */
+
+		.tradein{
+			&.tradein-safe{
+				.tradein-title{font-size: 34px;
+					.tradein-title-small{font-size: 22px;}
+				}
+			}
+		}
+
+	/* /tradein-safe */
 
 }
 @media screen and (max-width: 320px){
