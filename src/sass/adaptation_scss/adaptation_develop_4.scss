@@ -49,7 +49,9 @@
                 &.active{}
                 .sub_item{display: block;height: auto !important;background-color: rgba(0, 0, 0, 0.349);min-height: 50px;padding: 10px 20px;
                     &.item_1{float: right;width: 80%;
-                        a{padding-top: 8px;display: inline-block;}
+                        a{padding-top: 8px;display: inline-block;
+                            &.mobile_hidden{display: none;}
+                        }
                     }
                     &.item_2{float: left;width: 20%;
                         &>span{display: none;}
@@ -66,7 +68,9 @@
         .sub_menu_wrap .sub_menu_item{margin: 0 -1px;}
         .sub_menu{top: 100%;
             &.active{visibility: visible;opacity: 1;}
-            .sub_menu_wrap li{width: 100%;max-width: 100%;text-align: center;}
+            .sub_menu_wrap li{width: 100%;max-width: 100%;text-align: center;margin-bottom: 15px;
+                &:first-child{display: block;}
+            }
             .sub_menu_wrap a{margin-right: 0;font-size: 14px;line-height: 19px;padding-top: 5px;padding-bottom: 5px;}
             .sub_menu_wrap .sub_menu_item{width: 100%;margin-bottom: 13px;}
             .sub_menu_wrap span:not(.sub_menu_item):after{transform: translateX(-50%);left: 50%;}
@@ -95,7 +99,7 @@
     #call-popup{width: auto;padding: 0px 10px;}
 }
 @media screen and (max-width: 571px){
-
+    header .sub_menu .sub_menu_wrap li{margin-bottom: 7.6px;}
 }
 @media screen and (max-width: 479px){
 
@@ -123,7 +127,7 @@
         .sub_menu_wrap li{margin-bottom: 8px;}
     }
     /*tradein */
-    .tradein{min-height: 660px;background-position: 78% 66%;
+    .tradein{min-height: 690px;background-position: 78% 66%;
         .tradein-title{font-size: 45px;}
     }
 }

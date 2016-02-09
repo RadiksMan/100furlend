@@ -53,12 +53,14 @@ header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0
     .sub_menu{min-height: 127px;width: 100%;position: absolute;top: 0%;background-color: rgba(0, 0, 0, 0.65);left: 0;z-index: -100;opacity: 0;visibility: hidden;transition:all ease-out .2s;}
     .sub_menu_wrap{text-align: center;padding: 13px 10px 0px;
         a{font-size: 12px;line-height: 14px;text-transform: uppercase;color: #fff;text-decoration: none;text-decoration: none;display: inline-block;;padding-bottom: 10px;margin-right: 18%;
-            &:hover{color: $red;
+            &:hover,&.active{color: $red;
                 span{color: $red;}
                 span:not(.sub_menu_item):after{width: 100%;}
             }
         }
+
         li{display: inline-block;vertical-align: top;width: 24.3%;text-align: left;margin-bottom: 13px;max-width: 236px;
+            &:first-child{display: none;}
         }
         .sub_menu_item{display: inline-block;width: 49%;}
         span:not(.sub_menu_item){position: relative;display: inline-block;transition:color ease-out .2s;
