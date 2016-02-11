@@ -14,7 +14,7 @@
 }
 
 /*header*/
-header{position: absolute;width: 100%;top: 0;left: 0;background-color: rgba(0, 0, 0, 0.349);z-index: 5;
+header{width: 100%;background-color: rgba(0, 0, 0, 0.349);position: relative;z-index: 10;margin-bottom: -70px;
     a,span{text-decoration: none;color: white;font-size: 12px;
         &:hover{}
     }

@@ -82,7 +82,7 @@
 }
 @media screen and (max-width: 666px){
     /*header*/
-    header{
+    header{margin-bottom: -117px;
         .header_item{
             &.item_1{width: 100%;display: block;text-align: center;
                 .header_logo{display: inline-block;padding: 10px 0px;}
@@ -97,6 +97,9 @@
     }
     /*call-popup*/
     #call-popup{width: auto;padding: 0px 10px;}
+
+        /*tradein */
+    .tradein{min-height: 631px;}
 }
 @media screen and (max-width: 571px){
     header .sub_menu .sub_menu_wrap li{margin-bottom: 7.6px;}
@@ -117,7 +120,7 @@
 }
 @media screen and (max-width: 400px){
     /*header*/
-    header{
+    header{margin-bottom: -171px;
         .header_item{
             &.item_3{width: 100%;display: block;
                 .item_1{text-align: center;display: block;width: 100%;padding: 5px 0px;}
